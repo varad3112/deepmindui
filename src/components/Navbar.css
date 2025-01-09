@@ -1,0 +1,172 @@
+/* General Navbar Styles */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  z-index: 999; /* Ensure it's above other content */
+  background-color: black; /* Updated background color */
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* Adjusted for contrast */
+}
+
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  gap:40px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff; /* Adjusted for contrast */
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #0073e6;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown a {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #0073e6;
+  color: white;
+}
+
+/* Search Bar Styles */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  width: 200px;
+  padding: 5px;
+  margin-right: 10px;
+  border: 2px solid blue; /* Blue border */
+  border-radius: 20px;
+  font-size: 18px; /* Increased font size */
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  text-align: center; /* Center align text */
+}
+
+.search-bar::placeholder {
+  color: #ccc; /* Light color for placeholder text */
+  font-size: 18px; /* Increased font size for placeholder */
+  text-align: center; /* Center align placeholder text */
+}
+.search-btn {
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Gemini Link */
+.gemini-link a {
+  text-decoration: none;
+}
+
+.gemini-icon {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+  font-size: 35px;
+}
+
+.gemini-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile Menu */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-icon .bar {
+  width: 30px;
+  height: 4px;
+  background-color: #fff; /* Adjusted for contrast */
+}
+
+/* When Menu is Open */
+.navbar-links.active {
+  display: block;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}

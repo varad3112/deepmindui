@@ -1,0 +1,68 @@
+/* Footer Styles */
+.footer {
+  background-color: #000; /* Pure black background */
+  color: white; /* White text */
+  padding: 40px 20px; /* Increased padding for visual balance */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 50px; /* Space from above content */
+  border-top: 1px solid #444; /* Subtle top border for separation */
+  width: 100%; /* Ensure footer occupies full width */
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-social-icons {
+  margin-top: 20px;
+}
+
+.footer-social-icons a {
+  margin:10px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  color: #0073e6; /* Highlight color for hover effect */
+}
+
+/* Ensure footer stays at the bottom if content is less than viewport height */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* This ensures the main content takes the remaining space */
+}
