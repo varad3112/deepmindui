@@ -4,8 +4,8 @@ import WOW from 'wow.js';
 import 'animate.css';
 import './Home.css';
 
+
 const Home = () => {
-  // Initialize WOW.js
   useEffect(() => {
     new WOW().init();
   }, []);
@@ -54,28 +54,20 @@ const Home = () => {
 
       {/* Project Astra Section */}
       <section className="project-astra wow animate__animated animate__fadeInUp">
-        <h2 className="section-title">
-          Project Astra
-        </h2>
+        <h2 className="section-title">Project Astra</h2>
         <p className="section-description">
           A research exploring future capabilities of universal AI assistant
         </p>
-        <button className="learn-more-btn">
-          Learn More
-        </button>
+        <button className="learn-more-btn">Learn More</button>
       </section>
 
       {/* Project Mariner Section */}
       <section className="project-mariner wow animate__animated animate__fadeInUp">
-        <h2 className="section-title2">
-          Project Mariner
-        </h2>
+        <h2 className="section-title2">Project Mariner</h2>
         <p className="section-description2">
           A research prototype exploring the future of human-agent interaction, starting with your browser
         </p>
-        <button className="learn-more-btn">
-          Learn More
-        </button>
+        <button className="learn-more-btn">Learn More</button>
       </section>
 
       {/* Latest News Section */}
@@ -147,7 +139,7 @@ const Home = () => {
           ))}
         </div>
       </section>
-  </div>
+    </div>
   );
 };
 

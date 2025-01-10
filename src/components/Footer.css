@@ -1,13 +1,13 @@
 /* Footer Styles */
 .footer {
-  background-color: #000; /* Pure black background */
-  color: white; /* White text */
-  padding: 40px 20px; /* Increased padding for visual balance */
+  background-color: #000;
+  color: white;
+  padding: 40px 20px; 
   text-align: center;
   font-family: Arial, sans-serif;
-  margin-top: 50px; /* Space from above content */
-  border-top: 1px solid #444; /* Subtle top border for separation */
-  width: 100%; /* Ensure footer occupies full width */
+  border-top: 1px solid #444; 
+  width: 100%; 
+  height: 100%;
   position: relative;
   bottom: 0;
   left: 0;
